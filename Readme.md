@@ -6,23 +6,12 @@ This Python script demonstrates linear regression using the stochastic gradient 
 
 Before running the script, ensure that you have the following libraries installed:
 
-- [NumPy](https://numpy.org/): For numerical operations.
-- [Pandas](https://pandas.pydata.org/): For data manipulation.
-- [argparse](https://docs.python.org/3/library/argparse.html): For command-line arguments.
-
-You can install these libraries using pip:
-
-```bash
-pip install numpy pandas
-```
+- [NumPy]For numerical operations.
+- [Pandas] For data manipulation.
+- [argparse] For command-line arguments.
 
 ## Usage
 
-To run the script, use the following command:
-
-```bash
-python linear_regression_sgd.py -d data_file.csv -l learning_rate -t threshold
-```
 
 - `data_file.csv`: The path to the CSV file containing your dataset. The CSV file should have columns for data points, and each point should have an 'x' value as the feature and a 'y' value as the target variable.
 - `learning_rate`: The learning rate for the stochastic gradient descent algorithm. It determines the step size during the optimization process.
@@ -40,17 +29,6 @@ The script implements linear regression using stochastic gradient descent with t
 6. Update the weights based on the gradient and the learning rate.
 7. Repeat steps 4 to 6 until convergence, determined by the change in SSE.
 
-## Example
-
-Here is an example command to run the script:
-
-```bash
-python linear_regression_sgd.py -d data.csv -l 0.01 -t 0.001
-```
-
 This will load the dataset from `data.csv`, set the learning rate to 0.01, and stop the optimization when the change in SSE is less than 0.001.
 
 The script will print the progress of the optimization, including the iteration, weights, and SSE. It will also display the final learned weights.
-
-You can adjust the learning rate and threshold to fine-tune the optimization process for your specific dataset.
-
